@@ -6,7 +6,7 @@ pd.set_option('precision', 2)
 import requests
 import time
 
-intereses = ['bitcoin', 'iota', 'ethereum', 'litecoin']
+intereses = ['bitcoin', 'iota', 'ethereum', 'litecoin', 'ripple']
 column_names = ['name','price_eur', 'percent_change_24h', 'percent_change_7d']
 
 def formatData(df, column_names = ['name','price_eur', 'percent_change_24h', 'percent_change_7d']):

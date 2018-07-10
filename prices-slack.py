@@ -19,7 +19,7 @@ def formatData(df, column_names = ['name','price_eur', 'percent_change_24h', 'pe
     print(text)
 
 def sendSlackData(df):
-    webhook_url = 'https://hooks.slack.com/services/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'
+    webhook_url = 'https://hooks.slack.com/services/hook'
     slack_data = {'text': df.to_string(index  = False, col_space  = 15)+'\n\n'}
     response = requests.post(
         webhook_url, data=json.dumps(slack_data),
